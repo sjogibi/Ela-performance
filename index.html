@@ -36,7 +36,7 @@
         <header class="bg-slate-900 text-white p-8 flex justify-between items-center">
             <div>
                 <h1 class="text-3xl font-bold tracking-tight">ELA Performance & Appointment Analysis</h1>
-                <p class="text-slate-400 mt-1 text-sm uppercase tracking-wider font-semibold">Executive Summary | Dec 2025 - Apr 2026</p>
+                <p class="text-slate-400 mt-1 text-sm uppercase tracking-wider font-semibold">Executive Summary | Nov 2025 - Apr 2026</p>
             </div>
             <button onclick="window.print()" class="no-print bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg font-medium transition flex items-center gap-2 shadow-lg">
                 <i class="fa-solid fa-file-pdf"></i> Export Slide
@@ -52,7 +52,7 @@
                 <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-red-500">
                     <p class="text-sm text-gray-500 font-semibold mb-1">Total Appointments (6M)</p>
                     <div class="flex items-end gap-3">
-                        <h2 class="text-3xl font-bold text-slate-800">60</h2>
+                        <h2 class="text-3xl font-bold text-slate-800">72</h2>
                         <span class="text-sm font-medium text-red-500 mb-1"><i class="fa-solid fa-arrow-trend-down"></i> Worsening</span>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <p class="text-sm text-gray-500 font-semibold mb-1">Completed (Apr '26)</p>
                     <div class="flex items-end gap-3">
                         <h2 class="text-3xl font-bold text-slate-800">2</h2>
-                        <span class="text-sm font-medium text-red-600 mb-1 bg-red-50 px-2 py-0.5 rounded">-86.6% vs Dec</span>
+                        <span class="text-sm font-medium text-red-600 mb-1 bg-red-50 px-2 py-0.5 rounded">-86.6% vs Peak</span>
                     </div>
                 </div>
                 <!-- KPI 3 -->
@@ -69,7 +69,7 @@
                     <p class="text-sm text-gray-500 font-semibold mb-1">Pipeline Volume (Total)</p>
                     <div class="flex items-end gap-3">
                         <h2 class="text-3xl font-bold text-slate-800">5</h2>
-                        <span class="text-sm font-medium text-orange-500 mb-1">Down from 16</span>
+                        <span class="text-sm font-medium text-orange-500 mb-1">Down from 16 (Dec)</span>
                     </div>
                 </div>
                 <!-- KPI 4 -->
@@ -101,21 +101,21 @@
                     
                     <div class="space-y-5 text-sm text-slate-700 flex-grow">
                         <p class="leading-relaxed">
-                            A review of ELA's performance over the last 5 months indicates a <strong>severe and sustained decline</strong> in sales/appointment volume.
+                            A review of ELA's performance over the last <strong>6 months</strong> indicates a severe and sustained decline in sales/appointment volume after peaking in December.
                         </p>
                         
                         <ul class="space-y-3">
                             <li class="flex items-start gap-2">
                                 <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
-                                <span><strong>Drastic Drop in Completions:</strong> Completed visits fell steadily from 15 in Dec '25 to just 2 in Apr '26, representing an 86.6% collapse in productive meetings.</span>
+                                <span><strong>Drastic Drop in Completions:</strong> After reaching a peak of 15 completed visits in Dec '25, volume fell steadily to just 2 in Apr '26 (-86.6%).</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
-                                <span><strong>Shrinking Pipeline:</strong> The total scheduled volume (including future visits) has dropped from 16 to 5, meaning no new pipeline is replacing the lost volume.</span>
+                                <span><strong>Shrinking Pipeline:</strong> Total scheduled volume has dropped from 16 to 5. No new pipeline is replacing the lost volume.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
-                                <span><strong>No Signs of Recovery:</strong> There has been zero improvement month-over-month. The trend is consistently negative across all metrics.</span>
+                                <span><strong>No Signs of Recovery:</strong> There has been zero improvement month-over-month. The downward trend has continued uninterrupted for 4 consecutive months.</span>
                             </li>
                         </ul>
                     </div>
@@ -147,6 +147,13 @@
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="px-4 py-3 font-medium text-slate-800">November 2025</td>
+                                <td class="px-4 py-3 font-bold text-slate-800">12</td>
+                                <td class="px-4 py-3 text-blue-600 font-medium">11</td>
+                                <td class="px-4 py-3 text-slate-500">1</td>
+                                <td class="px-4 py-3 text-slate-500">0</td>
+                            </tr>
                             <tr class="hover:bg-slate-50 transition">
                                 <td class="px-4 py-3 font-medium text-slate-800">December 2025</td>
                                 <td class="px-4 py-3 font-bold text-slate-800">16</td>
@@ -186,9 +193,9 @@
                         <tfoot class="bg-slate-50 border-t border-slate-200">
                             <tr>
                                 <td class="px-4 py-3 font-bold text-slate-800">Overall Total</td>
-                                <td class="px-4 py-3 font-bold text-slate-800">60</td>
-                                <td class="px-4 py-3 font-bold text-blue-600">52</td>
-                                <td class="px-4 py-3 font-bold text-slate-500">5</td>
+                                <td class="px-4 py-3 font-bold text-slate-800">72</td>
+                                <td class="px-4 py-3 font-bold text-blue-600">63</td>
+                                <td class="px-4 py-3 font-bold text-slate-500">6</td>
                                 <td class="px-4 py-3 font-bold text-slate-500">3</td>
                             </tr>
                         </tfoot>
@@ -208,11 +215,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             const ctx = document.getElementById('performanceChart').getContext('2d');
             
-            const labels = ['Dec 2025', 'Jan 2026', 'Feb 2026', 'Mar 2026', 'Apr 2026'];
-            const completed = [15, 13, 12, 10, 2];
-            const cancelled = [1, 1, 2, 1, 0];
-            const future = [0, 0, 0, 0, 3];
-            const total = [16, 14, 14, 11, 5];
+            const labels = ['Nov 2025', 'Dec 2025', 'Jan 2026', 'Feb 2026', 'Mar 2026', 'Apr 2026'];
+            const completed = [11, 15, 13, 12, 10, 2];
+            const cancelled = [1, 1, 1, 2, 1, 0];
+            const future = [0, 0, 0, 0, 0, 3];
+            const total = [12, 16, 14, 14, 11, 5];
 
             new Chart(ctx, {
                 type: 'bar',
@@ -311,3 +318,4 @@
     </script>
 </body>
 </html>
+```
